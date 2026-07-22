@@ -1,0 +1,103 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  background-color: #F8FAFC;
+}
+
+/* Custom Scrollbars for clean data grids */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Clean, flat design utility classes */
+.card-flat {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-flat-hover:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 6px -1px rgba(15, 44, 89, 0.06), 0 2px 4px -1px rgba(15, 44, 89, 0.03);
+}
+
+.table-row-hover:hover {
+  background-color: #F8FAFC;
+  transition: background-color 0.15s ease;
+}
+
+.badge-base {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Glowing animation for active scam line alerts */
+.pulse-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: dot-glow 2s infinite;
+  opacity: 0.6;
+}
+
+@keyframes dot-glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Custom layout helpers */
+.gov-header-shadow {
+  box-shadow: 0 2px 4px rgba(15, 44, 89, 0.04);
+}
+
+/* Text selections */
+::selection {
+  background-color: rgba(29, 78, 216, 0.15);
+  color: #1E3A8A;
+}
