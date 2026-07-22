@@ -1,3 +1,5 @@
+![Kawach AI Banner](src/assets/kawach_ai_banner.png)
+
 # PROJECT REPORT: KAWACH AI (Digital Public Safety Command Portal)
 
 **Team Name**: [Insert Team Name]  

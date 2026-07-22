@@ -1,3 +1,5 @@
+![Kawach AI Banner](src/assets/kawach_ai_banner.png)
+
 # Kawach AI: Digital Public Safety Command Portal
 
 **Kawach AI** is a unified public safety intelligence prototype designed to detect, analyze, and disrupt digital fraud, money mule syndicates, and Fake Indian Currency Notes (FICN) circulation. 
